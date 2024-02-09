@@ -1,21 +1,18 @@
-let string = 'Je veux manger';
+let name = "Sam Harris";
 
-function myFunction(s) {
-    const words = s.split(' '); 
-    let shortestLength = words[0].length; 
-    for (let i = 1; i < words.length; i++) {
-        if (words[i].length < shortestLength) {
-            shortestLength = words[i].length;
-      }
-    }
-    return shortestLength; 
+function splitName(name) {
+  return name.split(' ').map(word => word[0].toUpperCase()).join('.');
+}
+ console.log(splitName(name));
+
+
+
+ function abbrevName(name){
+
+    return name.split(' ').map(i => i[0].toUpperCase()).join('.')
+
 }
 
-best 
-function findShort(s){
-    return Math.min(...s.split(" ").map (s => s.length));
-}
-
-function findShort(s){
-    return Math.min.apply(null, s.split(' ').map(w => w.length));
+function abbrevName(name){
+    return name.split(' ').map(x => x.substr(0, 1).toUpperCase()).join('.');
   }
