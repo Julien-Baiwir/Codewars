@@ -18,3 +18,4 @@ def bool_to_word(bool):
 
 def bool_to_word(bool):
     return ['No', 'Yes'][bool]
+"""en python false est egal à 0 et true à 1"""
