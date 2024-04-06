@@ -13,10 +13,11 @@ Input constraints:
 0 <= h <= 23
 0 <= m <= 59
 0 <= s <= 59"""
-(hours×3600+minutes×60+seconds)×1000
+"""(hours×3600+minutes×60+seconds)×1000"""
 
 def past(h, m, s):
     return ((h*3600)+(m*60)+s)*1000
 
 def past(h, m, s):
     return 3600000 * h + 60000 * m + 1000 * s
+
