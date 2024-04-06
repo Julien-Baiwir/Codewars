@@ -34,3 +34,20 @@ print(greet("polish"))
 """Dans l'expression if language in language_database:, Python vérifie si la variable language est présente parmi les clés du dictionnaire language_database.
 
 Lorsque vous utilisez l'opérateur in avec un dictionnaire en Python, il vérifie uniquement la présence de la clé, pas de la valeur. Donc, si language est une clé dans le dictionnaire language_database, l'expression sera évaluée comme True, sinon elle sera évaluée comme False."""
+
+
+def greet(language):
+    return {
+        'czech': 'Vitejte',   
+        'welsh': 'Croeso'
+    }.get(language, 'Welcome')
+    
+    
+def greet(language):
+    dict = {'english': 'Welcome',
+            'welsh': 'Croeso'}
+
+    if language in dict.keys():
+        return (dict[language])
+    else:
+        return ('Welcome')
